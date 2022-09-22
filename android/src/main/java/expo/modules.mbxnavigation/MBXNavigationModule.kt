@@ -15,7 +15,7 @@ class MBXNavigationModule : Module() {
     Name("MBXNavigation")
 
     OnCreate {
-      ResourceOptionsManager.getDefault(context, "pk.eyJ1IjoiZGVyc29ueSIsImEiOiJjbDdyaGZlemUwNDRmM3ZtaGd3ZTJsNDcyIn0.uAl7x2KeNK2OCFVGpspJGg").update {
+      ResourceOptionsManager.getDefault(context, "pk.*").update {
         tileStoreUsageMode(TileStoreUsageMode.READ_ONLY)
       }
     }
